@@ -9,9 +9,47 @@
  * @author kimbe
  */
 public class Car {
-    public static void main(String[] args) {
-        
-        
-        
+    
+    
+    private int yearModel;
+    private String make;
+    private int speed;
+    
+    public Car(int year, String make) {
+        yearModel = year;
+        make = make;
+        speed = 0;        
+    }
+
+    public int getYearModel() {
+        return yearModel;
+    }
+
+    public void setYearModel(int yearModel) {
+        this.yearModel = yearModel;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public void setMake(String make) {
+        this.make = make;
+    }
+
+    public int getSpeed() {
+        return speed;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+    
+    public void accelerate() {
+        speed += 5;
+    }
+    
+    public void brake() {
+        speed -= 5;
     }
 }
